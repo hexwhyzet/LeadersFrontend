@@ -1,0 +1,212 @@
+[
+  {
+    "country": "Montenegro",
+    "display_name": "Markovic",
+    "governments": ["Parliamentary Democracy"],
+    "date": "November 2016 - December 2020",
+    "idx": 1042
+  },
+  {
+    "country": "Yugoslavia",
+    "display_name": "Tito",
+    "governments": ["Dominant Party"],
+    "date": "March 1945 - May 1980",
+    "idx": 1067
+  },
+  {
+    "country": "Russia",
+    "display_name": "Yeltsin",
+    "governments": ["Parliamentary Democracy"],
+    "date": "August 1991 - December 1999",
+    "idx": 1260
+  },
+  {
+    "country": "Ukraine",
+    "display_name": "Yushchenko",
+    "governments": ["Presidential Democracy"],
+    "date": "January 2005 - February 2010",
+    "idx": 1301
+  },
+  {
+    "country": "Ghana",
+    "display_name": "Acheampong",
+    "governments": ["Military"],
+    "date": "January 1972 - July 1978",
+    "idx": 1558
+  },
+  {
+    "country": "Nigeria",
+    "display_name": "Gowon",
+    "governments": ["Military"],
+    "date": "July 1966 - July 1975",
+    "idx": 1578
+  },
+  {
+    "country": "Nigeria",
+    "display_name": "Ramat Mohammed",
+    "governments": ["Provisional - Military"],
+    "date": "July 1975 - February 1976",
+    "idx": 1579
+  },
+  {
+    "country": "Zaire",
+    "display_name": "Mobutu",
+    "governments": ["Personal Dictatorship"],
+    "date": "November 1965 - May 1997",
+    "idx": 1622
+  },
+  {
+    "country": "Uganda",
+    "display_name": "Amin",
+    "governments": ["Personal Dictatorship"],
+    "date": "January 1971 - April 1979",
+    "idx": 1627
+  },
+  {
+    "country": "Mexico",
+    "display_name": "Miguel de la Madrid",
+    "governments": ["Dominant Party"],
+    "date": "December 1982 - December 1988",
+    "idx": 164
+  },
+  {
+    "country": "Burundi",
+    "display_name": "Bagaza",
+    "governments": ["Party-Military"],
+    "date": "November 1976 - September 1987",
+    "idx": 1647
+  },
+  {
+    "country": "Somalia",
+    "display_name": "Siad Barre",
+    "governments": ["Personal Dictatorship"],
+    "date": "October 1969 - January 1991",
+    "idx": 1665
+  },
+  {
+    "country": "Ethiopia",
+    "display_name": "Selassie I",
+    "governments": ["Monarchy"],
+    "date": "May 1941 - September 1974",
+    "idx": 1670
+  },
+  {
+    "country": "Ethiopia",
+    "display_name": "Mengistu Mariam",
+    "governments": ["Military-Personal"],
+    "date": "February 1977 - May 1991",
+    "idx": 1673
+  },
+  {
+    "country": "Mozambique",
+    "display_name": "Machel",
+    "governments": ["Dominant Party"],
+    "date": "June 1975 - October 1986",
+    "idx": 1682
+  },
+  {
+    "country": "Rhodesia",
+    "display_name": "Smith",
+    "governments": ["Oligarchy"],
+    "date": "November 1965 - May 1979",
+    "idx": 1693
+  },
+  {
+    "country": "Zimbabwe",
+    "display_name": "Mugabe",
+    "governments": ["Provisional - Civilian"],
+    "date": "March 1980 - November 2017",
+    "idx": 1695
+  },
+  {
+    "country": "Canada",
+    "display_name": "Pierre Trudeau",
+    "governments": ["Parliamentary Democracy"],
+    "date": "April 1968 - June 1979",
+    "idx": 17
+  },
+  {
+    "country": "Libya",
+    "display_name": "Qaddafi",
+    "governments": ["Personal Dictatorship"],
+    "date": "September 1969 - August 2011",
+    "idx": 1807
+  },
+  {
+    "country": "Jordan",
+    "display_name": "Hussein",
+    "governments": ["Monarchy"],
+    "date": "August 1952 - February 1999",
+    "idx": 1928
+  },
+  {
+    "country": "Oman",
+    "display_name": "Qaboos bin Said",
+    "governments": ["Monarchy"],
+    "date": "July 1970 - January 2020",
+    "idx": 1989
+  },
+  {
+    "country": "USA",
+    "display_name": "Kennedy",
+    "governments": ["Presidential Democracy"],
+    "date": "January 1961 - November 1963",
+    "idx": 2
+  },
+  {
+    "country": "China",
+    "display_name": "Jiang Zemin",
+    "governments": ["Dominant Party"],
+    "date": "February 1997 - March 2003",
+    "idx": 2030
+  },
+  {
+    "country": "Japan",
+    "display_name": "Abe",
+    "governments": ["Parliamentary Democracy"],
+    "date": "December 2012 - September 2020",
+    "idx": 2093
+  },
+  {
+    "country": "Singapore",
+    "display_name": "Lee Kuan Yew",
+    "governments": ["Dominant Party"],
+    "date": "August 1965 - November 1990",
+    "idx": 2320
+  },
+  {
+    "country": "Cuba",
+    "display_name": "Fidel Castro",
+    "governments": ["Party-Personal"],
+    "date": "January 1959 - February 2008",
+    "idx": 37
+  },
+  {
+    "country": "United Kingdom",
+    "display_name": "MacMillan",
+    "governments": ["Parliamentary Democracy"],
+    "date": "January 1957 - October 1963",
+    "idx": 531
+  },
+  {
+    "country": "United Kingdom",
+    "display_name": "Thatcher",
+    "governments": ["Parliamentary Democracy"],
+    "date": "May 1979 - November 1990",
+    "idx": 537
+  },
+  {
+    "country": "Spain",
+    "display_name": "Franco",
+    "governments": ["Personal Dictatorship"],
+    "date": "April 1939 - October 1975",
+    "idx": 713
+  },
+  {
+    "country": "Spain",
+    "display_name": "Rodriguez Zapatero",
+    "governments": ["Parliamentary Democracy"],
+    "date": "April 2004 - December 2011",
+    "idx": 720
+  }
+]

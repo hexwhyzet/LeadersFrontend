@@ -1,0 +1,565 @@
+@font-face {
+    font-family: 'Viga';
+    src: local('Viga'), url(../fonts/Viga/Viga-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 200;
+    src: local('Poppins'), url(../fonts/Poppins/Poppins-Thin.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 300;
+    src: local('Poppins'), url(../fonts/Poppins/Poppins-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: local('Poppins'), url(../fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    src: local('Poppins'), url(../fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 600;
+    src: local('Poppins'), url(../fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    src: local('Poppins'), url(../fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 800;
+    src: local('Poppins'), url(../fonts/Poppins/Poppins-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 900;
+    src: local('Poppins'), url(../fonts/Poppins/Poppins-Black.ttf) format('truetype');
+}
+
+
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+    user-select: none;
+}
+
+#leader-preview, header {
+    -webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    background: #ffffff !important;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px calc(max(35px, (100% - 1000px) * 0.12));
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-element {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header .logo h2 {
+    margin-bottom: 0;
+    font-size: 2.8em;
+    font-family: 'Viga', serif;
+    color: #fff;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.social {
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+}
+
+.social div {
+    height: 35px;
+    width: 35px;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.social div a {
+    height: inherit;
+    width: inherit;
+    text-decoration: none;
+    display: inline-block;
+    filter: invert(1);
+    transition: 0.25s;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.social div a:hover {
+    transform: scale(1.15);
+}
+
+.social div a:active {
+    transform: scale(0.95);
+    transition: 0.1s;
+}
+
+.social div a object {
+    height: inherit;
+    width: inherit;
+    filter: brightness(0) invert(0);
+    pointer-events: none;
+}
+
+.showcase {
+    right: 0;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 100px calc(max(35px, (100% - 1000px) * 0.12)) calc(max(35px, (100% - 1000px) * 0.12)) calc(max(35px, (100% - 1000px) * 0.12));
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: black;
+    transition: 0.25s;
+    z-index: 2;
+
+    /* Code for "scale + overflow" to be working on child */
+    contain: strict;
+    overflow: hidden;
+    transform: translateZ(0)
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transform: scale(1.2);
+}
+
+.fadein-class {
+    -webkit-transition: visibility .5s linear, opacity .5s linear;
+    -moz-transition: visibility .5s linear, opacity .5s linear;
+    -o-transition: visibility .5s linear, opacity .5s linear;
+    transition: visibility .5s linear, opacity .5s linear;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    mix-blend-mode: overlay;
+}
+
+#leader-preview {
+    position: relative;
+    z-index: 10;
+}
+
+#leader-preview .name {
+    font-size: 5em;
+    font-weight: 800;
+    color: #fff;
+    margin: 20px 0;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+#leader-preview .country {
+    font-size: 4em;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1em;
+}
+
+#leader-preview .government {
+    font-size: 3em;
+    color: #fff;
+    margin: 15px 0;
+    font-weight: 600;
+    max-width: 700px;
+}
+
+#leader-preview .date {
+    font-size: 2.25em;
+    color: #fff;
+    margin: 15px 0;
+    font-weight: 600;
+    max-width: 700px;
+}
+
+#leader-preview a {
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #111;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    transition: 0.2s;
+}
+
+.description-container {
+    margin: auto;
+    display: flex;
+    display-model: row;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.description-container div {
+    padding: 0 35px;
+    width: 50%;
+}
+
+.description h2 {
+    font-family: 'Viga', sans-serif;
+    color: white;
+    font-size: 2.4em;
+}
+
+.description p {
+    margin: 30px 0 0;
+    color: white;
+    font-size: 1.2em;
+}
+
+.description .text {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+
+.description .example {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 50%;
+}
+
+.description-container .example video {
+    width: 100%;
+}
+
+.images-slider {
+    width: 100%;
+}
+
+.images-slider img {
+    height: 24.75vh;
+    padding: 10px;
+}
+
+.faq-container {
+    padding: 0 35px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.faq-container h1 {
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-size: 2.5em;
+    color: white;
+}
+
+.faq-container h3 {
+    font-size: 1.5em;
+    padding-top: 10px;
+    color: white;
+}
+
+.faq-container p {
+    font-size: 1.05em;
+    color: rgb(120, 120, 120);
+    font-weight: 500;
+}
+
+.faq-container a {
+    color: white;
+    font-weight: 600;
+}
+
+.mint-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.mint-container h2 {
+    margin-bottom: 15px;
+    font-family: 'Viga', sans-serif;
+    font-size: 3em;
+    color: white;
+}
+
+.mint-container h3 {
+    margin-top: 10px;
+    font-family: 'Viga', sans-serif;
+    font-size: 2.2em;
+    font-weight: 400;
+    color: white;
+}
+
+.mint-container h4 {
+    margin-top: 10px;
+    font-family: 'Viga', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+}
+
+.mint-container p {
+    font-size: 1.15em;
+    margin-bottom: 0.2em;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+}
+
+.center-column-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mint-container .button {
+    display: inline-block;
+    font-size: 1.2em;
+    background: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    color: #111;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    transition: 0.15s;
+}
+
+.mint-container .button:hover {
+    background-color: rgb(190, 190, 190);
+    transition-duration: 0.15s;
+}
+
+.mint-container .button:active {
+    transform: scale(0.95);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100%;
+    }
+
+    .showcase {
+        min-height: 0;
+        height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+    .showcase video {
+        opacity: 0.75;
+        transition: none;
+    }
+
+    section {
+        min-height: 100vh;
+        pointer-events: none;
+    }
+
+    header {
+        padding: 20px;
+        justify-content: normal;
+    }
+
+    .logo {
+        flex: 1;
+    }
+
+    header .logo h2 {
+        font-size: 1.8em;
+    }
+
+    .social {
+        padding-left: 30px;
+        max-width: 150px;
+        flex: 2;
+        justify-content: space-between;
+    }
+
+    .social div {
+        height: 25px;
+        width: 25px;
+        list-style: none;
+        margin-left: 0;
+    }
+
+    .showcase {
+        padding: 20px;
+    }
+
+    #leader-preview .name {
+        font-size: 9vw;
+        font-weight: 800;
+        margin: 12px 0;
+        line-height: 1em;
+        text-transform: uppercase;
+    }
+
+    #leader-preview .country {
+        font-size: 8vw;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1em;
+    }
+
+    #leader-preview .government {
+        font-size: 7vw;
+        color: #fff;
+        margin: 12px 0;
+        font-weight: 600;
+        max-width: 700px;
+    }
+
+    #leader-preview .date {
+        font-size: 5vw;
+        color: #fff;
+        margin: 12px 0 0 0;
+        font-weight: 600;
+        max-width: 700px;
+    }
+
+    #leader-preview a {
+        display: none;
+    }
+
+    .description-container {
+        flex-direction: column;
+    }
+
+    .description-container div {
+        padding: 0 calc(max(20px, (100% - 300px) * 0.3));
+        width: 100%;
+    }
+
+    .faq-container {
+        padding: 30px calc(max(20px, (100% - 300px) * 0.3)) 40px calc(max(20px, (100% - 300px) * 0.3));
+    }
+
+    .description p {
+        margin: 15px 0 0;
+        color: white;
+        font-size: 0.9em;
+    }
+
+    .description h2 {
+        padding-top: 30px;
+        font-family: 'Viga', sans-serif;
+        font-size: 1.8em;
+    }
+
+    .description-container .example {
+        width: 100vw;
+        height: 100vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .description-container .example video {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .faq-container h1 {
+        font-size: 1.6em;
+        padding-bottom: 10px;
+    }
+
+    .faq-container h3 {
+        font-size: 1.1em;
+        padding-top: 10px;
+        color: white;
+    }
+
+    .faq-container p {
+        font-size: 0.9em;
+    }
+
+    .faq-container a {
+        pointer-events: auto;
+        font-size: 0.9em;
+    }
+
+    .mint-container h2 {
+        font-size: 2em;
+    }
+
+    .mint-container h3 {
+        font-size: 1.8em;
+    }
+
+    .mint-container h4 {
+        font-size: 1.6em;
+    }
+
+    .mint-container p {
+        font-size: 1em;
+    }
+
+    .range-input {
+        width: 70vw;
+    }
+
+    .mint-container .button {
+        font-size: 1.1em;
+        border-radius: 2px;
+        letter-spacing: 2px;
+    }
+}
